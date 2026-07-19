@@ -16,7 +16,7 @@ is schema-validated and held at **Pending Human Review** before export.
 | Candidate | Aqeel |
 | Workflow | Meeting summary and action tracker |
 | OpenClaw version | `2026.7.1`, project-local and validated |
-| Selected model | `openai/gpt-5.6-terra` — selected, not invoked |
+| Selected model | `openai/gpt-5.6-terra` - selected, not invoked |
 | Default status | `Pending Human Review` |
 | Recommendation | **TEST / LIMIT** in a non-confidential, read-only pilot |
 
