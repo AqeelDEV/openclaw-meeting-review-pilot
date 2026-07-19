@@ -2,7 +2,8 @@
 
 ## Tools used
 
-- Codex for research, implementation, and document assembly
+- Codex as an AI development assistant for research support, iterative
+  prototyping, and QA
 - OpenClaw v2026.7.1 package for local CLI/version validation where the
   available runtime permits
 - GPT-5.6 Terra as the selected production model, not invoked
