@@ -1,0 +1,51 @@
+# Dependencies and package-manager state
+node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build, test, and local runtime artifacts
+/coverage/
+/.next/
+/.vinext/
+/out/
+/dist/
+/.wrangler/
+/outputs/
+/work/
+/tmp/
+*.tsbuildinfo
+
+# Generated submission duplicates
+# Keep output/Aqeel_Elchai_OpenClaw_Assessment.pdf as the reviewer-facing report.
+/output/package/
+/output/pdf/
+/output/*.zip
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OpenClaw local state must never be published
+openclaw-state/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Tool and operating-system noise
+.DS_Store
+Thumbs.db
+.vercel/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

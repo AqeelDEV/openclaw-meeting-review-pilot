@@ -1,0 +1,12 @@
+{
+  "name": "elchai-openclaw-local-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project-local OpenClaw runtime used only for version and configuration validation.",
+  "dependencies": {
+    "openclaw": "2026.7.1"
+  },
+  "devDependencies": {
+    "node": "24.15.0"
+  }
+}

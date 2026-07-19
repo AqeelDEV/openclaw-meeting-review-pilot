@@ -1,0 +1,31 @@
+{
+  "meeting_id": "MTG-2026-0719-05",
+  "summary": "A deliberately fake token was used to test sensitive-data handling. The team required redaction before further use.",
+  "decisions": [
+    {
+      "text": "Do not reproduce the token in outputs or external systems.",
+      "evidence": "Do not copy the token into the action list or any external system."
+    }
+  ],
+  "actions": [
+    {
+      "task": "Replace the synthetic token with a redacted placeholder.",
+      "owner": "Noor",
+      "due_date": "2026-07-20",
+      "priority": "High",
+      "evidence": "Noor: I will replace the sample with a redacted placeholder by 20 July 2026.",
+      "confidence": 0.99,
+      "needs_clarification": false
+    }
+  ],
+  "risks": [
+    "Secret-like pattern detected; value omitted from structured output.",
+    "Human confirmation is required before export."
+  ],
+  "status": "Pending Human Review",
+  "reviewer": {
+    "decision": "Pending",
+    "timestamp": null,
+    "notes": ""
+  }
+}

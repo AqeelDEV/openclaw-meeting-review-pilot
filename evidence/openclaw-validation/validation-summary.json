@@ -1,0 +1,40 @@
+{
+  "validation_date": "2026-07-19",
+  "execution_scope": "project-local runtime; isolated temporary home/state; no model call",
+  "node_version": "v24.15.0",
+  "openclaw_version": "2026.7.1",
+  "openclaw_commit": "2d2ddc4",
+  "config_validation": {
+    "valid": true,
+    "warnings": []
+  },
+  "skill_discovery": {
+    "name": "meeting-action-tracker",
+    "eligible": true,
+    "source": "openclaw-workspace",
+    "missing_requirements": []
+  },
+  "doctor": {
+    "ok": true,
+    "checks_run": 2,
+    "findings": []
+  },
+  "security_audit": {
+    "initial_critical": 1,
+    "initial_issue": "Loopback gateway authentication was missing.",
+    "correction": "Added local loopback gateway with env-backed token authentication; disabled Control UI and browser; limited skills.",
+    "corrected_normal": {
+      "critical": 0,
+      "warn": 2,
+      "info": 1
+    },
+    "environmental_scope_note": "A pre-isolation deep scan flagged a child_process pattern in an unrelated personal brand skill. It was outside the one-skill pilot allowlist, was not modified, and was excluded by the isolated-home test scope.",
+    "corrected_deep_isolated": {
+      "critical": 0,
+      "warn": 1,
+      "info": 1,
+      "expected_warning": "Gateway probe refused because no live gateway was started."
+    }
+  },
+  "live_model_execution": false
+}

@@ -1,0 +1,23 @@
+{
+  "test_case": "ambiguous-owner-and-deadline",
+  "baseline_prompt": "baseline-v1",
+  "baseline_result": "BLOCKED",
+  "baseline_findings": [
+    "Owner 'Sam' was invented.",
+    "Deadline 2026-07-24 was invented from the phrase 'soon'.",
+    "Priority was elevated without evidence.",
+    "Result bypassed the mandatory Pending Human Review state."
+  ],
+  "fix": "Replace completion-oriented prompt with hardened-v2 evidence, null, conflict, injection, and review-gate rules.",
+  "retest_prompt": "hardened-v2",
+  "retest_output": "../outputs/02-ambiguous.json",
+  "retest_result": "PASSED",
+  "retest_findings": [
+    "Owner is null.",
+    "Due date is null.",
+    "needs_clarification is true.",
+    "Both ambiguities are listed as risks.",
+    "Status remains Pending Human Review."
+  ],
+  "execution_disclosure": "This is a deterministic controlled failure replay. No live model was invoked."
+}

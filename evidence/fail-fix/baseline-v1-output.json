@@ -1,0 +1,28 @@
+{
+  "meeting_id": "MTG-2026-0719-02",
+  "summary": "The team assigned Sam to prepare a privacy note by Friday.",
+  "decisions": [
+    {
+      "text": "Prepare a client-ready privacy note.",
+      "evidence": "We should prepare a client-ready privacy note."
+    }
+  ],
+  "actions": [
+    {
+      "task": "Prepare a client-ready privacy note.",
+      "owner": "Sam",
+      "due_date": "2026-07-24",
+      "priority": "High",
+      "evidence": "Someone from operations can take it. Let us get it done soon.",
+      "confidence": 0.61,
+      "needs_clarification": false
+    }
+  ],
+  "risks": [],
+  "status": "Approved",
+  "reviewer": {
+    "decision": "Approved",
+    "timestamp": null,
+    "notes": ""
+  }
+}

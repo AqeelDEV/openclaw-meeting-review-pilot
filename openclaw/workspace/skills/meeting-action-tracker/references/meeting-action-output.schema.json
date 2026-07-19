@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/meeting-action-output.schema.json",
+  "title": "Meeting Action Tracker Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "meeting_id",
+    "summary",
+    "decisions",
+    "actions",
+    "risks",
+    "status",
+    "reviewer"
+  ],
+  "properties": {
+    "meeting_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "evidence"],
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "evidence": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "task",
+          "owner",
+          "due_date",
+          "priority",
+          "evidence",
+          "confidence",
+          "needs_clarification"
+        ],
+        "properties": {
+          "task": { "type": "string", "minLength": 1 },
+          "owner": { "type": ["string", "null"] },
+          "due_date": {
+            "oneOf": [
+              { "type": "string", "format": "date" },
+              { "type": "null" }
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["High", "Medium", "Low"]
+          },
+          "evidence": { "type": "string", "minLength": 1 },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "needs_clarification": { "type": "boolean" }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "status": {
+      "type": "string",
+      "const": "Pending Human Review"
+    },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "timestamp", "notes"],
+      "properties": {
+        "decision": { "type": "string", "const": "Pending" },
+        "timestamp": { "type": "null" },
+        "notes": { "type": "string", "maxLength": 0 }
+      }
+    }
+  }
+}

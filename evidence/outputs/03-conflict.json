@@ -1,0 +1,26 @@
+{
+  "meeting_id": "MTG-2026-0719-03",
+  "summary": "The test matrix is assigned to Lina, but the meeting contains conflicting deadline statements and ends without a confirmed date.",
+  "decisions": [],
+  "actions": [
+    {
+      "task": "Deliver the test matrix.",
+      "owner": "Lina",
+      "due_date": null,
+      "priority": "High",
+      "evidence": "Lina: I can deliver the test matrix on Tuesday, 21 July. Omar: The client review is Monday, so we need it by 20 July. Lina: I cannot confirm Monday yet. Please leave the date open.",
+      "confidence": 0.82,
+      "needs_clarification": true
+    }
+  ],
+  "risks": [
+    "Conflicting deadline statements: 20 July and 21 July.",
+    "Final speaker explicitly asked to leave the date open."
+  ],
+  "status": "Pending Human Review",
+  "reviewer": {
+    "decision": "Pending",
+    "timestamp": null,
+    "notes": ""
+  }
+}

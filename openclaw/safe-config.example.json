@@ -1,0 +1,61 @@
+{
+  "$schema": "https://openclaw.ai/config.json",
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/gpt-5.6-terra"
+      },
+      "skills": [
+        "meeting-action-tracker"
+      ],
+      "sandbox": {
+        "mode": "all",
+        "scope": "session",
+        "workspaceAccess": "none"
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "enabled": false
+    },
+    "auth": {
+      "mode": "token",
+      "token": {
+        "source": "env",
+        "provider": "default",
+        "id": "OPENCLAW_GATEWAY_TOKEN"
+      }
+    }
+  },
+  "browser": {
+    "enabled": false
+  },
+  "skills": {
+    "allowBundled": []
+  },
+  "tools": {
+    "profile": "minimal",
+    "deny": [
+      "group:runtime",
+      "group:fs",
+      "browser",
+      "message",
+      "cron",
+      "web_search",
+      "web_fetch",
+      "canvas"
+    ],
+    "exec": {
+      "mode": "deny"
+    },
+    "elevated": {
+      "enabled": false
+    }
+  },
+  "audit": {
+    "enabled": true
+  }
+}

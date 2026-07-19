@@ -1,0 +1,3 @@
+00:00 Lina: I can deliver the test matrix on Tuesday, 21 July.
+00:29 Omar: The client review is Monday, so we need it by 20 July.
+00:55 Lina: I cannot confirm Monday yet. Please leave the date open.

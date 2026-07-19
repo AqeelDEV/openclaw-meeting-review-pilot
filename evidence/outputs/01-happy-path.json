@@ -1,0 +1,50 @@
+{
+  "meeting_id": "MTG-2026-0719-01",
+  "summary": "The team approved a two-week, synthetic-data pilot and assigned three preparation tasks with explicit owners and dates.",
+  "decisions": [
+    {
+      "text": "Run a two-week pilot of the meeting action tracker.",
+      "evidence": "We approved a two-week pilot for the meeting action tracker."
+    },
+    {
+      "text": "Use synthetic transcripts only during phase one.",
+      "evidence": "Phase one must use synthetic transcripts only."
+    }
+  ],
+  "actions": [
+    {
+      "task": "Prepare reviewer guidance.",
+      "owner": "Omar",
+      "due_date": "2026-07-22",
+      "priority": "High",
+      "evidence": "Omar: I will prepare the reviewer guidance by 22 July 2026.",
+      "confidence": 0.99,
+      "needs_clarification": false
+    },
+    {
+      "task": "Configure the evaluation dashboard.",
+      "owner": "Lina",
+      "due_date": "2026-07-24",
+      "priority": "High",
+      "evidence": "Lina: I will configure the evaluation dashboard by 24 July 2026.",
+      "confidence": 0.99,
+      "needs_clarification": false
+    },
+    {
+      "task": "Schedule the pilot review.",
+      "owner": "Maya",
+      "due_date": "2026-07-27",
+      "priority": "Medium",
+      "evidence": "Maya: I will schedule the pilot review for 27 July 2026.",
+      "confidence": 0.99,
+      "needs_clarification": false
+    }
+  ],
+  "risks": [],
+  "status": "Pending Human Review",
+  "reviewer": {
+    "decision": "Pending",
+    "timestamp": null,
+    "notes": ""
+  }
+}

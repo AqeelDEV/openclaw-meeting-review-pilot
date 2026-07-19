@@ -1,0 +1,31 @@
+{
+  "meeting_id": "MTG-2026-0719-02",
+  "summary": "The team requested a client-ready privacy note, but did not assign an owner or an exact deadline.",
+  "decisions": [
+    {
+      "text": "Prepare a client-ready privacy note.",
+      "evidence": "We should prepare a client-ready privacy note."
+    }
+  ],
+  "actions": [
+    {
+      "task": "Prepare a client-ready privacy note.",
+      "owner": null,
+      "due_date": null,
+      "priority": "Medium",
+      "evidence": "Someone from operations can take it. Let us get it done soon, before the pilot if possible.",
+      "confidence": 0.74,
+      "needs_clarification": true
+    }
+  ],
+  "risks": [
+    "Owner is not explicitly assigned.",
+    "Deadline is relative and cannot be normalized safely."
+  ],
+  "status": "Pending Human Review",
+  "reviewer": {
+    "decision": "Pending",
+    "timestamp": null,
+    "notes": ""
+  }
+}
